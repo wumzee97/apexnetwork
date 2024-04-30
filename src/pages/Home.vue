@@ -182,7 +182,7 @@ fetchTransactions();
             />
           </div>
         </div>
-        <AppLoader v-if="loading" />
+        <AppLoader v-if="loading && !payments.length" />
         
         <div class="overflow-x-scroll" v-else-if="payments.length">
         
